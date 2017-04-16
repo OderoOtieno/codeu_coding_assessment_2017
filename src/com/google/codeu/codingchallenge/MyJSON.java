@@ -50,5 +50,6 @@ final class MyJSON implements JSON {
   @Override
   public void getStrings(Collection<String> names) {
     // TODO: implement this
+    
   }
 }
