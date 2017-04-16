@@ -21,6 +21,9 @@ final class MyJSONParser implements JSONParser {
   @Override
   public JSON parse(String in) throws IOException {
     // TODO: implement this
+    String parsedObject = "{" + in + "}";
+JSon object = (JSon) parsedObject;
+return object;
     return new MyJSON();
   }
 }
