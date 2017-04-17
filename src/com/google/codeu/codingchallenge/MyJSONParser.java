@@ -19,11 +19,15 @@ import java.io.IOException;
 final class MyJSONParser implements JSONParser {
 
   @Override
-  public JSON parse(String in) throws IOException {
-    // parsing object
-    String parsedObject = "{" + in + "}";
-JSon object = (JSon) parsedObject;
-return object;
-    return new MyJSON();
+public JSON parseObject(String input) {
+    if(input.contains(":") == false) {
+    throw IOException();
+    } else if((input.contains(",\n") == false) || (input.contains(", ") == false)) {
+    throw IOException();
+    } else {
+      String JSONString = "{"+ input + "}";
+      JSON object = (JSON) jSonString;
+      return object;
+          return new MyJSON();
+    }
   }
-}
