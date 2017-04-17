@@ -18,7 +18,7 @@ import java.io.IOException;
 
 final class MyJSONParser implements JSONParser {
 
-  @Override
+ @Override
 public JSON parseObject(String input) {
     if(input.contains(":") == false) {
     throw IOException();
