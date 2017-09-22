@@ -69,5 +69,6 @@ final class MyJSON implements JSON {
 	      if(maps.get(key) instanceof String)
 	        names.add(key);
   }
+	return 0;
 }
 
